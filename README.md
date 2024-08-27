@@ -4,15 +4,13 @@
 
 This project sets up a Dockerized environment with Nginx serving as a web server and load balancer for three Node.js backend services. A Redis database is also included to handle caching or other data storage needs. Docker Compose is used to manage and orchestrate the containers.
 
-### Architecture Diagram
-
-![Architecture Diagram](path/to/your/architecture-diagram.png)
-
 ## Components
 
 - **Nginx**: Acts as the web server and load balancer for the Node.js services.
 - **Node1, Node2, Node3**: Node.js backend services that handle requests from Nginx.
 - **Redis**: In-memory data store used by the Node.js services.
+
+### Architecture Diagram
 
 ![Architecture Diagram](images/architecture-diagram.png)
 
