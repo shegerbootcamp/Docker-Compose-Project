@@ -1,4 +1,5 @@
 # Set the base image to an LTS version of Node.js
+# Set the base image to an LTS version of Node.js
 FROM node:16
 
 # File Author / Maintainer
@@ -11,6 +12,9 @@ RUN apt-get update && \
 
 # Clean npm cache
 RUN npm cache clean --force
+
+# Install nodemon globally
+RUN npm install -g nodemon
 
 # Set the working directory
 WORKDIR /src

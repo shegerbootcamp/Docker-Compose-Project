@@ -1,11 +1,11 @@
 # Set the base image to Ubuntu
-FROM        ubuntu
+FROM ubuntu
 
 # File Author / Maintainer
 LABEL maintainer="cloudsheger"
 
 # Update the repository and install Redis Server
-RUN         apt-get update && apt-get install -y redis-server
+RUN  apt-get update && apt-get install -y redis-server
 
 # Expose Redis port 6379
 EXPOSE      6379
